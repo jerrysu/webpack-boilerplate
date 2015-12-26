@@ -1,6 +1,5 @@
+import Button from 'Button.jsx';
 import React from 'react';
-
-import cx from 'classnames';
 
 import styles from './styles/App.css';
 
@@ -23,14 +22,12 @@ export default class App extends React.Component {
             attention to featured content or information.
           </p>
           <p>
-            <a
-              className={cx('btn', 'btn-lg', {
-                'btn-default': this.state.clicked,
-                'btn-primary': !this.state.clicked
-              })}
+            <Button
+              type={this.state.clicked ? 'danger' : 'primary'}
+              size="large"
               onClick={() => this.handleClick()}>
               Learn more
-            </a>
+            </Button>
           </p>
         </div>
       </div>

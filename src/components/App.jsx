@@ -6,7 +6,7 @@ import styles from './styles/App.css';
 export default class App extends React.Component {
   state = {
     clicked: false
-  }
+  };
 
   handleClick() {
     this.setState({clicked: !this.state.clicked});

@@ -15,17 +15,17 @@ export default class Button extends React.Component {
       'link'
     ]),
     size: React.PropTypes.oneOf(['xsmall', 'small', 'medium', 'large'])
-  }
+  };
 
   static defaultProps = {
     size: 'medium',
     type: 'default',
     block: false
-  }
+  };
 
   state = {
     active: false
-  }
+  };
 
   render() {
     const {size, type, ...props} = this.props;

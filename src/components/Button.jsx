@@ -23,10 +23,6 @@ export default class Button extends React.Component {
     block: false
   };
 
-  state = {
-    active: false
-  };
-
   render() {
     const {size, type, ...props} = this.props;
     const Component = this.props.href ? 'a' : 'button';

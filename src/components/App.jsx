@@ -8,9 +8,9 @@ export default class App extends React.Component {
     clicked: false
   };
 
-  handleClick() {
+  handleClick = () => {
     this.setState({clicked: !this.state.clicked});
-  }
+  };
 
   render() {
     return (
@@ -25,7 +25,7 @@ export default class App extends React.Component {
             <Button
               type={this.state.clicked ? 'danger' : 'primary'}
               size="large"
-              onClick={() => this.handleClick()}>
+              onClick={this.handleClick}>
               Learn more
             </Button>
           </p>
